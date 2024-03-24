@@ -8,6 +8,8 @@ import {
 import Root from './layouts/Root';
 import ErrorPage from './pages/ErrorPage';
 import Home from './pages/Home';
+import DonationDetails from './components/DonationDetails';
+import Donation from './components/Donation';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,8 +17,17 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        index: true,
+        path: '/',
         element: <Home />,
+        loader: () => fetch('fakeData.json')
+      },
+      {
+        path: '/donation',
+        element: <Donation />
+      },
+      {
+        path: '/donation-details/:id',
+        element: <DonationDetails />,
         loader: () => fetch('fakeData.json')
       }
     ]
