@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { getCard, savedCard } from "../utils/localStorage";
 
 const DonationDetails = () => {
     const { id } = useParams();
@@ -6,7 +7,7 @@ const DonationDetails = () => {
     const car = cards.find(c => c.id == parseInt(id));
     // console.log(car);
     const handleDonateBtn = id => {
-        console.log(id);
+        savedCard(parseInt(id))
     }
     return (
         <div className="my-10 max-w-7xl mx-auto ">
