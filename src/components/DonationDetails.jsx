@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { getCard, savedCard } from "../utils/localStorage";
+import { savedCard } from "../utils/localStorage";
 
 const DonationDetails = () => {
     const { id } = useParams();
