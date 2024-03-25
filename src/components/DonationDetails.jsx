@@ -9,14 +9,17 @@ const DonationDetails = () => {
     const handleDonateBtn = id => {
         savedCard(parseInt(id))
     }
+    const btnStyles = {
+        backgroundColor: `${car.textColor}`
+    }
     return (
         <div className="my-10 max-w-7xl mx-auto ">
             <div className="relative">
                 <img src={car.image} className="w-full max-h-[600px] bg-cover" />
-                <button onClick={() => handleDonateBtn(car.id)} className="px-5 py-3 font-bold text-xl text-white rounded-lg bg-[#FF444A] absolute bottom-5 left-5">Donate ${car.price}</button>
+                <button onClick={() => handleDonateBtn(car.id)} style={btnStyles} className="px-5 py-3 font-bold text-xl text-white absolute bottom-5 left-5">Donate ${car.price}</button>
             </div>
-                <h1 className="text-3xl font-bold text-black my-5">{car.title}</h1>
-                <p>{car.description}</p>
+            <h1 className="text-3xl font-bold text-black my-5">{car.title}</h1>
+            <p>{car.description}</p>
         </div>
     );
 };

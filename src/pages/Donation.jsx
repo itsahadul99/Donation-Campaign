@@ -14,9 +14,6 @@ const Donation = () => {
             // setDisplayCard(donateCards)
         }
     }, [cards]);
-    const handleSeeAllBtn = () => {
-        console.log("See all button adding soon");
-    }
     // console.log(donateCard);
     return (
         <div>
@@ -54,9 +51,6 @@ const Donation = () => {
                         )
                     })
                 }
-            </div>
-            <div className="flex justify-center w-full text-white">
-                <button onClick={handleSeeAllBtn} className=' bg-green-600 mb-8 px-5 py-3 rounded-lg font-bold'>See All</button>
             </div>
         </div>
     );

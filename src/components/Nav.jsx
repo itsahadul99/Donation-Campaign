@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../assets/Logo.png';
 const Nav = () => {
     const links = <>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/donation' >Donation</NavLink></li>
-    <li><NavLink to='/statistics'>Statistics</NavLink></li>
+    <li><NavLink to='./'>Home</NavLink></li>
+    <li><NavLink to='./donation' >Donation</NavLink></li>
+    <li><NavLink to='./statistics'>Statistics</NavLink></li>
     </>
     return (
         <div className='border-b-2 shadow-lg'>
