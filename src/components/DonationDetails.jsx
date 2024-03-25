@@ -4,7 +4,7 @@ import { savedCard } from "../utils/localStorage";
 const DonationDetails = () => {
     const { id } = useParams();
     const cards = useLoaderData();
-    const car = cards.find(c => c.id == parseInt(id));
+    const car = cards.find(c => c.id === parseInt(id));
     // console.log(car);
     const handleDonateBtn = id => {
         savedCard(parseInt(id))
