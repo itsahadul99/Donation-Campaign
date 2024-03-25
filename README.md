@@ -2,7 +2,7 @@
 
 Live site:
 
-- [Carrier Hub](https://donation-campaign12.netlify.app/)
+- [Donation Campaign](https://donation-campaign12.netlify.app/)
 
 Resources:
 
